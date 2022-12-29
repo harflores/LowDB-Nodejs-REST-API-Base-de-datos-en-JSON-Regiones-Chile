@@ -1,0 +1,25 @@
+@api = http://localhost:3000/regiones
+
+###
+GET http://localhost:3000/regiones
+
+###
+POST http://localhost:3000/regiones
+Content-Type: application/json
+
+{
+  "region": "",
+  "comunas": ["using", "Nodejs," "and", "express"]
+}
+
+### update
+PUT http://localhost:3000/regiones/1
+Content-Type: application/json
+
+{
+  "region": "hello",
+  "comunas": ["world","world"]
+}
+
+### get total regiones
+{{api}}/count
